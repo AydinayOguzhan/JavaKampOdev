@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        //Instructor oluşturuldu
         Instructor instructor = new Instructor();
         instructor.setId(1);
         instructor.setInstructorId(1);
@@ -13,6 +14,7 @@ public class Main {
         instructor.setUserName("Instructor User Name");
         instructor.setPassword("1234");
 
+        //Student oluşturuldu
         Student student = new Student();
         student.setId(2);
         student.setStudentId(1);
@@ -23,6 +25,7 @@ public class Main {
         student.setUserName("Student User Name");
 
 
+        //UserManager'daki bütün işlemler hem student ile hem de instructor ile çalışabilir.
         UserManager userManager = new UserManager();
         userManager.Add(student);
         userManager.Delete(instructor);

@@ -1,5 +1,6 @@
 package com.company;
 
+//Base class. Encapsulation işlemi uygulandı.
 public class User {
     private int id;
     private String firstName;
